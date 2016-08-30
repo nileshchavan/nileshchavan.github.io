@@ -1,0 +1,150 @@
+/* Generic styles  */
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+input {
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+h1 {
+    margin: 5px 0;
+}
+
+
+/*  Generic classes     */
+
+.clearfix:after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.row {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.col-8 {
+    width: 66.66%;
+    float: left;
+    padding: 5px;
+}
+
+.col-4 {
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+}
+
+/*  Search page */
+.searchStream {
+    border: 1px solid black;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+.searchStream_section-form {
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+.searchStream_section-results {
+    padding: 20px;
+}
+
+.searchStream_section-results img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.total-results {
+    float: left;
+}
+
+.results-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.paginator {
+    float: right;
+}
+
+.game-title {
+    display: inline-block;
+    margin: 0;
+}
+
+.info {
+    display: inline-block;
+}
+
+form#searchForm {
+    margin-top: 20px;
+}
+
+.resultsStats {
+    margin-top: 20px;
+}
+
+
+/*  Progress indicator  */
+.spinner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.spinner-container {
+    width: 80%;
+    margin: 100px auto;
+    border: 2px solid grey;
+    border-radius: 10px;
+    z-index: 10000;
+    background: white;
+    position: relative;
+    max-width: 400px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    opacity: 0.5;
+    z-index: 9999;
+}
+
+.spinner-container img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+}
+
+.spinner-container div {
+    margin: 15px;
+    line-height: 40px;
+}
